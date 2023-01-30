@@ -21,7 +21,8 @@ I have been looking for something like this ever since I got Spotify, I was tire
 6. Uses color theme of Spotify.
 7. Skip button.
 8. Pause/resume button.
-9. You can configure colors, fonts, position and transparency of the window in `config.ini`
+9. Close button.
+10. You can configure colors, fonts, position and transparency of the window in `config.ini`
    
 ## Installation  
 1. Run the following command to clone this repository.
