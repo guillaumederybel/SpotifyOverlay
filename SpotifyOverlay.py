@@ -53,7 +53,7 @@ class SpotifyOverlay:
         self.screen_width = self.window.winfo_screenwidth()
         self.screen_height = self.window.winfo_screenheight()
 
-        self.window_width = 252
+        self.window_width = 280
         self.window_height = 68
 
         if self.horizontal_screen_position == 'right':
@@ -142,6 +142,21 @@ class SpotifyOverlay:
             borderwidth=0
         )
         button.grid(row=2, column=1, padx=(10,5))
+
+        button = Button(
+            self.window,
+            text='X',
+            command=self.window.destroy,
+            bg=self.background_color,
+            fg=self.title_font_color,
+            font=(self.font_name, 8),
+            activebackground='red',
+            borderwidth=0,
+            width=3,
+            height=4
+        )
+        button.grid(row=0, rowspan=3, column=3)
+
         if self.spotify_object.current_playback():
             if self.spotify_object.current_playback()['is_playing']:
                 self.play_status.set('II')
